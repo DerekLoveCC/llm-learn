@@ -7,3 +7,5 @@
 4. 转换模型为GGML FP16格式：python convert.py <folder path of model>
 5. 做4bit的量化(quantize)模型：quantize <path of file generated at step4> <new model file path> q4_0
 6. 测试：main -m <new model file path> --prompt "it is a good day"
+   main -m <new model file path> -n 80 --prompt "it is a good day"
+   main -m <new model file path> -n 80 --prompt "床前明月光"
